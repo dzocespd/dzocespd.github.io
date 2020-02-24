@@ -9,7 +9,7 @@ const errImg = document.getElementById("errImg");
 const errParag = document.getElementById("errParag");
 const loader = document.getElementById("loader");
 const key = "d02f63e09ab9ce4f6de597aab7837f68";
-const url = "http://api.openweathermap.org/data/2.5/weather?q=";
+const url = "https://api.openweathermap.org/data/2.5/weather?q=";
 const today = new Date().toLocaleDateString();
 
 // Taka treba da se povika
