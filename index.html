@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css" type="text/css" />
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="container">
+
+
+
+        <h1>Weather App</h1>
+        <div class="searchBox">
+
+            <input type="text" name="cityInput" id="enterCity" placeholder="Search for City/Town"> <br />
+            <button id="myBtn">Search</button>
+        </div>
+
+        <img src="./img/loader.gif" alt="loader" id="loader">
+        <div id="errDiv">
+            <p class="errorPrint" id="errParag"></p>
+            <img src="./img/angry cloud.gif" alt="angryCloud" id="errImg">
+        </div>
+
+        <div id="resultId">
+            <p id="cityResult"></p>
+            <p id="weatherResult"></p>
+            <p id="weatherDescription"></p>
+            <br />
+            <p id="date"></p>
+        </div>
+
+    </div>
+
+
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

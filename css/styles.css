@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+#loader{
+    width: 10rem;
+    height: 10rem;
+    display: none;
+}
+/* .center {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+} */
+
+body {
+    background-image: url("../img/wallpaperNature.jpg");
+    background-size: cover;
+    background-repeat:  no-repeat;
+}
+
+.container {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    background-color: rgba(251, 215, 71, 0.171);
+    align-items: center;
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container h1 {
+    margin-bottom: 4.5rem;
+    color: #FBD747;
+    font-size: 3rem;
+    text-shadow: 2px 2px  #233D4D;
+}
+.searchBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3.75rem;
+    padding: 2rem 1.25rem 1.25rem;
+    
+}
+#myBtn{
+    color:#233D4D;
+    border: none;
+    padding: 0.8rem  0.8rem  0.8rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 10px;
+    background-color: rgba(251, 215, 71, 0.575);
+    border-bottom: 2px solid  #233D4D;
+    border-radius: 10px 0px 10px 0px;
+    font-weight: 600;
+}
+#myBtn:hover{
+    background-color: rgba(255, 225, 106, 0.575);
+}
+.searchBox input {
+    padding: 0.5rem 0.5rem;
+    border: none;
+    outline: none;
+    background-color: rgba(251, 215, 71, 0.575);
+    border-radius: 10px 0px 10px 0px;
+    border-bottom: 3px solid  #233D4D;
+    color: #233D4D;
+    font-size: 1.25rem;
+    font-weight: 600;
+    
+}
+.searchBox ::-webkit-input-placeholder{
+    color: #233D4D;
+}
+.searchBox input:focus {
+    background-color: rgba(255, 225, 106, 0.575);
+}
+
+.everyResult {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+    background-color: rgba(251, 215, 71, 0.575);
+    width: 50vh;
+    height: 50vh;
+    border-radius: 0px 30px 0px 30px;
+}
+.everyResult #cityResult {
+    align-items: center;
+    text-align: center;
+    color: #233D4D;
+    font-size: 2.5rem;
+    padding-bottom: 1.9rem;
+}
+.everyResult #weatherResult{
+    color:  #233D4D;
+    text-align: center;
+    font-size: 3.2rem;
+    font-weight: bolder;
+}
+.everyResult #weatherDescription {
+    color:  #233D4D;
+    text-align: center;
+    font-size: 1.25rem;
+}
+#date{
+    color:  #233D4D;
+    text-align: center;
+    font-size: 1.25rem;
+}
+#errDiv{
+    text-align: center;
+}
+#errDiv img{
+    display: none;
+    width: 200px;
+    height: 200px;
+}
+.errorPrint{
+    color:  #FBD747;
+    text-shadow: 2px 2px  #233D4D;
+    font-size: 3rem;
+}
+
+
+
+/* MobileTest */
+@media all and (min-width: 0px) and (max-width: 340px) {
+    .container h1 {
+        margin-bottom: 4rem;
+        color: #FBD747;
+        font-size: 2.9rem;
+        text-shadow: 2px 2px #233D4D;
+    }
+    .searchBox {
+        display: flex;
+        flex-direction: column;
+    }
+    .everyResult {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: auto;
+        background-color: rgba(251, 215, 71, 0.575);
+        width: 40vh;
+        height: 40vh;
+        border-radius: 0px 30px 0px 30px;
+    }
+    .everyResult #cityResult {
+        align-items: center;
+        text-align: center;
+        color: #233D4D;
+        font-size: 2rem;
+        padding-bottom: 1rem;
+    }
+    .everyResult #weatherResult{
+        color: #233D4D;
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: bolder;
+    }
+    .everyResult #weatherDescription {
+        color: #233D4D;
+        text-align: center;
+        font-size: 0.7rem;
+    }
+}
+@media all and (min-width: 0px) and (max-width: 290px) {
+    
+    .container h1 {
+        margin-bottom: 3rem;
+        color: #FBD747;
+        font-size: 2.5rem;
+        text-shadow: 2px 2px #233D4D;
+    }
+}
+@media all and (min-width: 0px) and (max-width: 250px) {
+    .searchBox input{
+        width: 13rem;
+    }
+    .container h1 {
+        margin-bottom: 3rem;
+        color: #FBD747;
+        font-size: 2rem;
+        text-shadow: 2px 2px #233D4D;
+    }
+}
