@@ -43,7 +43,7 @@ const printData = (data) => {
     if (data != null) {
         clear()
         resultId.classList.add("everyResult");
-        cityResult.innerText = data.name;
+        cityResult.innerText = data.name + " , " + data.sys.country;
         weatherResult.innerText += `${Math.round(data.main.temp)} °c`
         weatherDescription.innerText += `
         ${data.weather[0].main}
