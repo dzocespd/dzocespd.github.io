@@ -45,7 +45,7 @@ const printData = (data) => {
         resultId.classList.add("everyResult");
         cityResult.innerText = data.name + " , " + data.sys.country;
         weatherResult.innerText += `${Math.round(data.main.temp)} °c`
-        weatherDescription.innerText += `
+        weatherDescription.innerHTML += `
         ${data.weather[0].main}
         ${data.weather[0].description}
         <img src="http://openweathermap.org/img/w/${data.weather[0].icon}.png" alt="logo" />`
