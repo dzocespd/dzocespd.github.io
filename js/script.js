@@ -47,7 +47,8 @@ const printData = (data) => {
         weatherResult.innerText += `${Math.round(data.main.temp)} °c`
         weatherDescription.innerText += `
         ${data.weather[0].main}
-        ${data.weather[0].description}`
+        ${data.weather[0].description}
+        <img src="http://openweathermap.org/img/w/${data.weather[0].icon}.png" alt="logo" />`
         dateRes.innerText = `Today date
         ${today}`
     }else{
